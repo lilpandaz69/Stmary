@@ -1,0 +1,14 @@
+.download-card-section {
+  background-color: #f9f9f9;
+}
+
+.download-card {
+  border-radius: 15px;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
