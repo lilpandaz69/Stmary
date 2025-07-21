@@ -9,7 +9,7 @@ function HeroSection() {
       style={{ backgroundImage: `url(${heroImg})` }}
     >
       <div className="container">
-        <h1 className="display-4 fw-bold">كنيسة السيدة العذراء</h1>
+        <h1 className="display-4 fw-bold">  كنيسة السيدة العذراء مريم</h1>
         <p className="lead mt-3">بيت للرب، ومكان للصلاة والخدمة والمحبة</p>
         <a href="#services" className="btn btn-light mt-4 px-5">اعرف المزيد</a>
       </div>

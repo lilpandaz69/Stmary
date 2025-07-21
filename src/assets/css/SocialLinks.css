@@ -1,0 +1,53 @@
+/* Social Section */
+.social-section {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.social-section h2 {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Social Links */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.social-link i {
+  font-size: 1.2rem;
+}
+
+/* YouTube */
+.social-link.youtube {
+  background-color: #FF0000;
+}
+
+.social-link.youtube:hover {
+  background-color: #cc0000;
+}
+
+/* Facebook */
+.social-link.facebook {
+  background-color: #1877f2;
+}
+
+.social-link.facebook:hover {
+  background-color: #0f5bb5;
+}
+.youtube-embed {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}

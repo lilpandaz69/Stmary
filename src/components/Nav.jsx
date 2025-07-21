@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/css/Nav.css'; // لو عندك CSS إضافي
+import '../assets/css/Nav.css'; // CSS الخاص بالنافبار
 import logo from '../assets/img/logo.png';
 
 function Nav() {
@@ -31,31 +31,46 @@ function Nav() {
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                className="nav-link dropdown-toggle btn btn-link"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 خدمات
-              </a>
+              </button>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">خدمة 1</a></li>
-                <li><a className="dropdown-item" href="#">خدمة 2</a></li>
+                <li><a className="dropdown-item" href="#" onClick={(e) => e.preventDefault()}>خدمة 1</a></li>
+                <li><a className="dropdown-item" href="#" onClick={(e) => e.preventDefault()}>خدمة 2</a></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                className="nav-link dropdown-toggle btn btn-link"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="true"
+              >
                 أخبار ومقالات
-              </a>
+              </button>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">مقالة 1</a></li>
-                <li><a className="dropdown-item" href="#">مقالة 2</a></li>
+                <li><a className="dropdown-item" href="#!" onClick={(e) => e.preventDefault()}>مقالة 1</a></li>
+                <li><a className="dropdown-item" href="#!" onClick={(e) => e.preventDefault()}>مقالة 2</a></li>
               </ul>
             </li>
 
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button
+                className="nav-link dropdown-toggle btn btn-link"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 مكتبات
-              </a>
+              </button>
               <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">مكتبة 1</a></li>
+                <li><a className="dropdown-item" href="#!" onClick={(e) => e.preventDefault()}>مكتبة 1</a></li>
               </ul>
             </li>
 
