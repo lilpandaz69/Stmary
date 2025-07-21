@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Stmary/static/css/main.7b08b67c.css",
-    "main.js": "/Stmary/static/js/main.bdb25611.js",
+    "main.css": "/Stmary/static/css/main.a5dc6a11.css",
+    "main.js": "/Stmary/static/js/main.9b8f06ee.js",
     "static/media/fa-solid-900.ttf": "/Stmary/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/logo.png": "/Stmary/static/media/logo.8a9cd8450ba829d19322.png",
     "static/media/1.jpg": "/Stmary/static/media/1.92562534d443bcae5a39.jpg",
@@ -13,11 +13,11 @@
     "static/media/fa-v4compatibility.ttf": "/Stmary/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
     "static/media/fa-v4compatibility.woff2": "/Stmary/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Stmary/index.html",
-    "main.7b08b67c.css.map": "/Stmary/static/css/main.7b08b67c.css.map",
-    "main.bdb25611.js.map": "/Stmary/static/js/main.bdb25611.js.map"
+    "main.a5dc6a11.css.map": "/Stmary/static/css/main.a5dc6a11.css.map",
+    "main.9b8f06ee.js.map": "/Stmary/static/js/main.9b8f06ee.js.map"
   },
   "entrypoints": [
-    "static/css/main.7b08b67c.css",
-    "static/js/main.bdb25611.js"
+    "static/css/main.a5dc6a11.css",
+    "static/js/main.9b8f06ee.js"
   ]
 }
