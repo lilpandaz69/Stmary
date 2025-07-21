@@ -10,7 +10,7 @@ const DownloadCard = () => {
           <h3 className="mb-3 text-primary fw-bold">تنزيل الملف الخاص بالخدمة</h3>
           <p className="mb-4 text-muted">يمكنك تحميل الملف الخاص بخدمة الكنيسة من الزر بالأسفل.</p>
           <a
-            href="/files/myfile.pdf" // ضع هنا اسم الملف النهائي
+            href="/files/Nour_MamdohCV.pdf" // ضع هنا اسم الملف النهائي
             download
             className="btn btn-primary px-4 py-2"
           >
