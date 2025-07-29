@@ -11,7 +11,7 @@ function ServicesSection() {
             <div className="card h-100">
               <div className="card-body">
                 <h5 className="card-title">القداسات</h5>
-                <p className="card-text">نقيم القداسات بشكل دوري وسط أجواء من الروحانية.</p>
+                <p className="card-text"> القداسات بشكل دوري وسط أجواء من الروحانية</p>
               </div>
             </div>
           </div>
