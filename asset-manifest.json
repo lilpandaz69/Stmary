@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Stmary/static/css/main.a5dc6a11.css",
-    "main.js": "/Stmary/static/js/main.9b8f06ee.js",
+    "main.js": "/Stmary/static/js/main.baf95944.js",
     "static/media/fa-solid-900.ttf": "/Stmary/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/logo.png": "/Stmary/static/media/logo.8a9cd8450ba829d19322.png",
     "static/media/1.jpg": "/Stmary/static/media/1.92562534d443bcae5a39.jpg",
@@ -14,10 +14,10 @@
     "static/media/fa-v4compatibility.woff2": "/Stmary/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Stmary/index.html",
     "main.a5dc6a11.css.map": "/Stmary/static/css/main.a5dc6a11.css.map",
-    "main.9b8f06ee.js.map": "/Stmary/static/js/main.9b8f06ee.js.map"
+    "main.baf95944.js.map": "/Stmary/static/js/main.baf95944.js.map"
   },
   "entrypoints": [
     "static/css/main.a5dc6a11.css",
-    "static/js/main.9b8f06ee.js"
+    "static/js/main.baf95944.js"
   ]
 }
