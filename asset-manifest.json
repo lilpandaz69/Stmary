@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/Stmary/static/css/main.a5dc6a11.css",
-    "main.js": "/Stmary/static/js/main.baf95944.js",
+    "main.js": "/Stmary/static/js/main.1d3a27d3.js",
     "static/media/fa-solid-900.ttf": "/Stmary/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/logo.png": "/Stmary/static/media/logo.8a9cd8450ba829d19322.png",
     "static/media/1.jpg": "/Stmary/static/media/1.92562534d443bcae5a39.jpg",
     "static/media/fa-brands-400.ttf": "/Stmary/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/nativity.jpg": "/Stmary/static/media/nativity.d135e978743253cfcf6c.jpg",
     "static/media/fa-solid-900.woff2": "/Stmary/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
     "static/media/fa-brands-400.woff2": "/Stmary/static/media/fa-brands-400.c210719e60948b211a12.woff2",
     "static/media/fa-regular-400.ttf": "/Stmary/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
@@ -14,10 +15,10 @@
     "static/media/fa-v4compatibility.woff2": "/Stmary/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
     "index.html": "/Stmary/index.html",
     "main.a5dc6a11.css.map": "/Stmary/static/css/main.a5dc6a11.css.map",
-    "main.baf95944.js.map": "/Stmary/static/js/main.baf95944.js.map"
+    "main.1d3a27d3.js.map": "/Stmary/static/js/main.1d3a27d3.js.map"
   },
   "entrypoints": [
     "static/css/main.a5dc6a11.css",
-    "static/js/main.baf95944.js"
+    "static/js/main.1d3a27d3.js"
   ]
 }
