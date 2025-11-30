@@ -1,16 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/css/Nav.css'; // CSS الخاص بالنافبار
 import logo from '../assets/img/logo.png';
+import '../assets/css/Nav.css';
 
 function Nav() {
+  const [openMenu, setOpenMenu] = useState(null);
+
+  const toggleMenu = (menuName) => {
+    setOpenMenu((prev) => (prev === menuName ? null : menuName));
+  };
+
+  // أعياد سيدية (أمثلة – عدل زي ما تحب)
+  const lordlyFeasts = [
+    { name: 'عيد الميلاد المجيد', path: '/feasts/lordly/nativity' },
+    { name: 'عيد القيامة المجيد', path: '/feasts/lordly/resurrection' },
+    { name: 'عيد الغطاس', path: '/feasts/lordly/epiphany' },
+    { name: 'عيد دخول المسيح أورشليم', path: '/feasts/lordly/palmsunday' },
+  ];
+
+  // أعياد صغرى (أمثلة)
+  const minorFeasts = [
+    { name: 'عيد النيروز', path: '/feasts/minor/neyrouz' },
+    { name: 'عيد الصليب', path: '/feasts/minor/cross' },
+    { name: 'عيد البشارة', path: '/feasts/minor/annunciation' },
+  ];
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div className="container">
+
+        {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" style={{ height: '50px' }} />
         </Link>
 
+        {/* Toggle Button (mobile) */}
         <button
           className="navbar-toggler"
           type="button"
@@ -23,55 +47,62 @@ function Nav() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
+        {/* Links */}
         <div className="collapse navbar-collapse" id="navbarContent">
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
 
+            {/* مثال لينك رئيسي للكنيسة */}
             <li className="nav-item">
               <Link className="nav-link active" to="/">الكنيسة</Link>
             </li>
 
+            {/* أعياد سيدية */}
             <li className="nav-item dropdown">
               <button
+                type="button"
                 className="nav-link dropdown-toggle btn btn-link"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                onClick={() => toggleMenu('lordly')}
               >
-                خدمات
+                أعياد سيدية
               </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#" onClick={(e) => e.preventDefault()}>خدمة 1</a></li>
-                <li><a className="dropdown-item" href="#" onClick={(e) => e.preventDefault()}>خدمة 2</a></li>
+
+              <ul className={`dropdown-menu ${openMenu === 'lordly' ? 'show' : ''}`}>
+                {lordlyFeasts.map((feast, idx) => (
+                  <li key={idx}>
+                    <Link className="dropdown-item" to={feast.path}>
+                      {feast.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </li>
 
+            {/* أعياد صغرى */}
             <li className="nav-item dropdown">
               <button
+                type="button"
                 className="nav-link dropdown-toggle btn btn-link"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="true"
+                onClick={() => toggleMenu('minor')}
               >
-                أخبار ومقالات
+                أعياد صغرى
               </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#!" onClick={(e) => e.preventDefault()}>مقالة 1</a></li>
-                <li><a className="dropdown-item" href="#!" onClick={(e) => e.preventDefault()}>مقالة 2</a></li>
+
+              <ul className={`dropdown-menu ${openMenu === 'minor' ? 'show' : ''}`}>
+                {minorFeasts.map((feast, idx) => (
+                  <li key={idx}>
+                    <Link className="dropdown-item" to={feast.path}>
+                      {feast.name}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </li>
 
-            <li className="nav-item dropdown">
-              <button
-                className="nav-link dropdown-toggle btn btn-link"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                مكتبات
-              </button>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#!" onClick={(e) => e.preventDefault()}>مكتبة 1</a></li>
-              </ul>
+            {/* عرض كامل */}
+            <li className="nav-item">
+              <Link className="nav-link" to="/feasts">
+                عرض كامل
+              </Link>
             </li>
 
           </ul>
