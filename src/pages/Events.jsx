@@ -8,24 +8,28 @@ const eventsList = [
     title: "عيد الميلاد المجيد",
     description: "ميلاد ربنا يسوع المسيح، فرح وخلاص للعالم.",
     img: "/img/events/nativity.jpg",
+    comingSoon: false,
   },
   {
     id: "easter",
     title: "عيد القيامة",
     description: "قيامة المسيح، غلبة الموت والحياة الجديدة.",
-    img: "/images/events/easter.jpg",
+    img: "/img/events/easter.webp",
+    comingSoon: true,
   },
   {
     id: "ascension",
     title: "عيد الصعود",
     description: "صعود المسيح إلى السماوات وتمجيده.",
-    img: "/images/events/ascension.jpg",
+    img: "/img/events/So3od2.jpg",
+    comingSoon: true,
   },
   {
     id: "holy-week",
     title: "اسبوع الام ",
     description: " اسبوع الام ",
     img: "/img/events/sadd week.jpg",
+    comingSoon: false,
   },
 ];
 
@@ -42,9 +46,13 @@ function Events() {
               <div className="p-3 text-center">
                 <h4 className="fw-bold">{event.title}</h4>
                 <p className="text-muted">{event.description}</p>
-                <Link to={`/events/${event.id}`} className="btn btn-primary">
-                  اعرف المزيد
-                </Link>
+                <Link
+  to={event.comingSoon ? "/coming-soon" : `/events/${event.id}`}
+  className="btn btn-primary"
+>
+  {event.comingSoon ? "قريبًا" : "اعرف المزيد"}
+</Link>
+
               </div>
             </div>
           </div>

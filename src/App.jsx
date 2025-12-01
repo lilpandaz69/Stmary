@@ -7,10 +7,11 @@ import ServicesSection from './components/Services';
 import Footer from './components/Footer';
 import DownloadCard from './components/DownloadCard';
 import SocialLinks from './components/SocialLinks';
-import MapSection from './components/Location';
+import CommentsWidget from './components/CommentsWidget';
 import Events from "./pages/Events";
 import NativityPage from "./pages/NativityPage";
 import HolyWeekPage from "./pages/HolyWeekPage";
+import ComingSoon from "./pages/ComingSoon";
 
 // صفحة الـ Home
 function Home() {
@@ -19,7 +20,6 @@ function Home() {
       <HeroSection />
       <DownloadCard />
       <SocialLinks />
-      <MapSection />
       <ServicesSection />
       <Footer />
     </>
@@ -36,6 +36,8 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/events/nativity" element={<NativityPage />} />
         <Route path="/events/holy-week" element={<HolyWeekPage />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+
       </Routes>
     </>
   );

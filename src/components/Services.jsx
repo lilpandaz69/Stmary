@@ -1,6 +1,6 @@
 import React from 'react';
 import '../assets/css/ServicesSection.css';
-
+import CommentsWidget from './CommentsWidget';
 function ServicesSection() {
   return (
     <section className="py-5 text-center" id="services">
@@ -32,6 +32,7 @@ function ServicesSection() {
             </div>
           </div>
         </div>
+              <CommentsWidget />
       </div>
     </section>
   );

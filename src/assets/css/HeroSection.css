@@ -1,24 +1,35 @@
-
-.hero-section {
-  background-image: url('../img/1.jpg'); /* أو استخدم import image وركبه inline */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
+.hero-slider {
   position: relative;
-  z-index: 1;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 100px;
+  height: 90vh;
 }
 
-.hero-section::before {
-  content: '';
+.hero-bg {
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
 }

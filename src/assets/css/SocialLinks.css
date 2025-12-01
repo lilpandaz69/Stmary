@@ -1,53 +1,56 @@
-/* Social Section */
-.social-section {
-  background-color: #f9f9f9;
-  border-top: 1px solid #ddd;
+.social-boxes {
+  margin-top: 20px;
 }
 
-.social-section h2 {
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 30px;
-}
-
-/* Social Links */
-.social-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px 24px;
-  font-size: 1rem;
-  border-radius: 50px;
-  text-decoration: none;
-  color: #fff;
-  transition: background-color 0.3s ease;
-}
-
-.social-link i {
-  font-size: 1.2rem;
-}
-
-/* YouTube */
-.social-link.youtube {
-  background-color: #FF0000;
-}
-
-.social-link.youtube:hover {
-  background-color: #cc0000;
-}
-
-/* Facebook */
-.social-link.facebook {
-  background-color: #1877f2;
-}
-
-.social-link.facebook:hover {
-  background-color: #0f5bb5;
-}
-.youtube-embed {
-  max-width: 800px;
-  margin: 0 auto;
+.social-box {
+  width: 100px;
+  padding: 10px;
   border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-box i {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.youtube {
+  background: #ff0000;
+}
+
+.facebook {
+  background: #0d6efd;
+}
+
+.social-box:hover {
+  transform: translateY(-5px);
+  opacity: 0.9;
+}
+
+/* Video + Map boxes */
+.embed-container {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.embed-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-map-row {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .embed-container {
+    height: 260px;
+  }
 }

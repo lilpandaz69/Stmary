@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/NativityPage.css";
 import heroImg from "../assets/img/sadweek.webp"; // أو حط صورة خاصة بـ أسبوع الآلام
-
+import CommentsWidget from '../components/CommentsWidget.jsx';
 function HolyWeekPage() {
   return (
     <div>
@@ -66,7 +66,7 @@ function HolyWeekPage() {
     </div>
   </div>
 </div>
-
+<CommentsWidget />
       </div>
     </div>
   );

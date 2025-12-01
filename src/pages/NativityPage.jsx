@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/NativityPage.css";
 import heroImg from "../assets/img/nativity.jpg"; // غير الصورة لو عايز صورة خاصة بعيد الميلاد
-
+import CommentsWidget from '../components/CommentsWidget.jsx';
 function NativityPage() {
   return (
     <div>
@@ -44,6 +44,7 @@ function NativityPage() {
             تحميل PowerPoint 
           </a>
         </div>
+        <CommentsWidget />
       </div>
     </div>
   );

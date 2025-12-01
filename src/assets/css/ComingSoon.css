@@ -1,0 +1,14 @@
+.coming-container {
+  height: 80vh;
+  padding: 20px;
+}
+
+.coming-container h1 {
+  font-size: 3rem;
+  color: #0d6efd;
+}
+
+.coming-container p {
+  font-size: 1.3rem;
+  color: #555;
+}
