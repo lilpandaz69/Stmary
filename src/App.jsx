@@ -8,7 +8,9 @@ import Footer from './components/Footer';
 import DownloadCard from './components/DownloadCard';
 import SocialLinks from './components/SocialLinks';
 import MapSection from './components/Location';
-import Nativity from './pages/feasts/lordly/Nativity';
+import Events from "./pages/Events";
+import NativityPage from "./pages/NativityPage";
+import HolyWeekPage from "./pages/HolyWeekPage";
 
 // صفحة الـ Home
 function Home() {
@@ -31,7 +33,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/feasts/lordly/nativity" element={<Nativity />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/events/nativity" element={<NativityPage />} />
+        <Route path="/events/holy-week" element={<HolyWeekPage />} />
       </Routes>
     </>
   );

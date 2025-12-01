@@ -11,20 +11,6 @@ function Nav() {
   };
 
   // أعياد سيدية (أمثلة – عدل زي ما تحب)
-  const lordlyFeasts = [
-    { name: 'عيد الميلاد المجيد', path: '/feasts/lordly/nativity' },
-    { name: 'عيد القيامة المجيد', path: '/feasts/lordly/resurrection' },
-    { name: 'عيد الغطاس', path: '/feasts/lordly/epiphany' },
-    { name: 'عيد دخول المسيح أورشليم', path: '/feasts/lordly/palmsunday' },
-  ];
-
-  // أعياد صغرى (أمثلة)
-  const minorFeasts = [
-    { name: 'عيد النيروز', path: '/feasts/minor/neyrouz' },
-    { name: 'عيد الصليب', path: '/feasts/minor/cross' },
-    { name: 'عيد البشارة', path: '/feasts/minor/annunciation' },
-  ];
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div className="container">
@@ -55,48 +41,9 @@ function Nav() {
             <li className="nav-item">
               <Link className="nav-link active" to="/">الكنيسة</Link>
             </li>
-
-            {/* أعياد سيدية */}
-            <li className="nav-item dropdown">
-              <button
-                type="button"
-                className="nav-link dropdown-toggle btn btn-link"
-                onClick={() => toggleMenu('lordly')}
-              >
-                أعياد سيدية
-              </button>
-
-              <ul className={`dropdown-menu ${openMenu === 'lordly' ? 'show' : ''}`}>
-                {lordlyFeasts.map((feast, idx) => (
-                  <li key={idx}>
-                    <Link className="dropdown-item" to={feast.path}>
-                      {feast.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-
-            {/* أعياد صغرى */}
-            <li className="nav-item dropdown">
-              <button
-                type="button"
-                className="nav-link dropdown-toggle btn btn-link"
-                onClick={() => toggleMenu('minor')}
-              >
-                أعياد صغرى
-              </button>
-
-              <ul className={`dropdown-menu ${openMenu === 'minor' ? 'show' : ''}`}>
-                {minorFeasts.map((feast, idx) => (
-                  <li key={idx}>
-                    <Link className="dropdown-item" to={feast.path}>
-                      {feast.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
+            <Link className="nav-link" to="/events">
+  المناسبات
+</Link>
 
             {/* عرض كامل */}
             <li className="nav-item">

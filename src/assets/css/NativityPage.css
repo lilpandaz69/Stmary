@@ -1,0 +1,47 @@
+/* 🌟 HERO DESIGN */
+.nativity-hero {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nativity-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.nativity-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* 🕊 BOX المواعيد */
+.schedule-box {
+  background: #ffffff;
+  border-radius: 12px;
+  border-left: 5px solid #007bff;
+}
+
+.schedule-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+/* 📂 POWERPOINT SECTION */
+.ppt-section .btn {
+  font-size: 1.2rem;
+  border-radius: 30px;
+}
